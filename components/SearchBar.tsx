@@ -31,7 +31,10 @@ const SearchBar = () => {
             return alert('Please fill in the search bar');
         }
 
-        updateSearchParams(model.toLocaleLowerCase(), manufacturer.toLocaleLowerCase());
+        updateSearchParams(
+            model.toLocaleLowerCase(), 
+            manufacturer.toLocaleLowerCase()
+        );
     }
 
     const updateSearchParams = (model: string, manufacturer: string) => {
@@ -59,7 +62,7 @@ const SearchBar = () => {
             <div className='searchbar__item'>
                 <SearchManufacturer
                 manufacturer={manufacturer}
-                setManufacturer={setManufacturer}
+                setManuFacturer={setManufacturer}
                 />
                 <SearchButton otherClasses='sm:hidden'/>
             </div>
